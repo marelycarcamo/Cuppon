@@ -29,40 +29,45 @@
 		<title>CUPPON</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-sm px-5">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<img
-						id="logo-cuppon"
-						src="assets/img/img/logo-white.png"
-						alt="Avatar Logo" />
-				</a>
-				<button
-					class="navbar-toggler border border-1 text-white-50"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#collapsibleNavbar">
-					<span class="fa fa-bars text-white"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link text-white" href="#">Inicio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-white" href="#">Productos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-white" href="#">Contacto</a>
-						</li>
-					</ul>
+		<!-- NAVBAR -->
+		<div id="container-navbar">
+			<nav class="navbar navbar-expand-sm">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							id="logo-cuppon"
+							src="assets/img/logo-white.png"
+							alt="Avatar Logo" />
+					</a>
+
+					<button
+						class="navbar-toggler border border-1 text-white-50"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#collapsibleNavbar">
+						<span id="fa-bars" class="fa fa-bars text-light"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">Productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#">Contacto</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</div>
+		<!-- CARDS -->
 		<div class="row row-cols-auto">
 			<div class="card shadow p-0">
 				<img
-					src="assets/img/img/cupon-1.jpg"
+					src="assets/img/cupon-1.jpg"
 					class="card-img-top img-fluid"
 					alt="..." />
 				<div class="card-body">
@@ -83,26 +88,34 @@
 			</div>
 		</div>
 		<!-- FORMULARIO -->
+		<div id="container-formulario">
+			<form class="text-white">
+				<p id="form-titulo">Recibe cupones en tu correo</p>
+				<div class="form-input">
+					<input class="" id="nombre" type="text" placeholder="Nombre" />
+				</div>
+				<div class="">
+					<input
+						class="form-input"
+						id="correo"
+						type="text"
+						placeholder="Correo Electrónico" />
+				</div>
+				<button type="submit" class="form-boton">Enviar</button>
+			</form>
+		</div>
 
-		<form class="text-white">
-			<p id="form-titulo">Recibe cupones en tu correo</p>
-			<div class="form-input">
-				<input class="" id="nombre" type="text" placeholder="Nombre" />
-			</div>
-			<div class="">
-				<input
-					class="form-input"
-					id="correo"
-					type="text"
-					placeholder="Correo Electrónico" />
-			</div>
-			<button type="submit" class="form-boton">Enviar</button>
-		</form>
+		<!-- FOOTER -->
+		<div id="container-footer">
+			<footer>
+				<img src="assets/img/logo-black.png" alt="" />
+				<p>© 2018 Cuppon Latam .Todos los derechos reservados.</p>
+			</footer>
+		</div>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"></script>
-		<script src="assets/js/cuppon.js"></script>
 	</body>
 </html>
