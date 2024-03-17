@@ -48,22 +48,28 @@ justify-content: start;
    */
 
 
-/* row-col-auto */
-.row{
+/* row-cols-auto */
+.cards{
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	
+	
 
 }
 
 .card{
 	display: flex;
 	justify-content: center;
+	width: 278px;
+	margin: 5%;
 	
 }
 
 .card img {
 	height: 180px;
+	width: 278px;
 }
 
 
