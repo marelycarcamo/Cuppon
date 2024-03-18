@@ -1,75 +1,66 @@
-*{
-	padding:0px;
-	margin:0px;
+*,
+.container-navbar {
+	padding: 0px;
+	margin: 0px;
 }
 
-.container-navbar{
-	padding: 0px;
-}
-	
-body{
+body {
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-weight: 300;
+	min-width: 278px;
 }
-
 
 /* roboto tamaño mediano */
-.special-price, #form-titulo, button {
-		font-family: "Roboto", sans-serif;
-		font-weight: 600;
+.special-price,
+#form-titulo,
+button {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
 }
 
-/* #container-navbar{
-	display: flex;
-	justify-content: center;
-} */
-
+.container-navbar {
+	padding-left: 6.6%;
+}
 
 /* NAVBAR */
 
 .navbar {
-	
-		background-color: #28A745;
-		width:  100vw;
-		overflow: hidden;
+	background-color: #28a745;
+	width: 100vw;
+	overflow: hidden;
 }
 
 /* alinea el menu a la derecha */
 .navbar-nav {
-	
 	float: right;
 	margin-right: 2%;
-	right: 55px;
+	right: 48px;
 	position: absolute;
-	} 
+}
 
 /* ajuste tamaño logo */
-#logo-cuppon{
+#logo-cuppon {
 	height: 26px;
 	width: 85px;
 	top: 12px;
-	left: 119px;
 }
-
-
-
 
 /* CARD */
 
 /* row-cols-auto */
-#productos{
+#productos {
 	padding-block: 5%;
 }
 
-.cards{
+.cards {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 
-.card{
+.card {
 	display: flex;
 	justify-content: center;
 	width: 278px;
@@ -82,73 +73,72 @@ body{
 	width: 278px;
 }
 
-.card-body{
+.card-body {
 	width: 278px;
 }
 
-.card-title{
-font-size: 20px;
-color: #212529;
-letter-spacing: 0px;
+.card-title {
+	font-size: 20px;
+	color: #212529;
+	letter-spacing: 0px;
 }
 
-.card-subtitle, .text-price{
+.card-subtitle,
+.text-price {
 	font-size: 16px;
-	color:#707070;
+	color: #707070;
 }
 
-.card-text{
+.card-text {
 	font-size: 13px;
 	color: #707070;
 }
 
-.text-price{
+.text-price {
 	text-align: end;
 }
 
-.special-price{
+.special-price {
 	font-size: 20px;
-	color:#28A745;
+	color: #28a745;
 }
-
-
 
 /* FORM */
 
-#container-formulario{
+#container-formulario {
 	display: flex;
 	justify-content: center;
 }
 
-form{
-	background-color: #28A745;
+form {
+	background-color: #28a745;
 	height: 241px;
-	width: 320px; 
+	width: 320px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
-input{
+input {
 	padding: 10px;
 	height: 40px;
 	width: 278px;
 }
 
-#form-titulo{
+#form-titulo {
 	font-size: 21px;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
-input .form-boton{
-	background-color: #FFFFFF;
-	border: 1px solid #DDDDDD;
+input .form-boton {
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
 	border-radius: 4px;
 }
 
-.form-boton{
-	color:#212529 ;
+.form-boton {
+	color: #212529;
 	font-size: 16px;
 	width: 112.71px;
 	height: 40px;
@@ -161,20 +151,17 @@ input[type="text"]:focus {
 	outline: none; /* Elimina borde externo */
 }
 
-
 /* FOOTER */
 
-#container-footer{
+#container-footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 5%;
-	
-
 }
 
-footer{
+footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -182,58 +169,46 @@ footer{
 	justify-self: center;
 	width: 100vw;
 	height: 104px;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 }
 
-footer img{
-	width:82px ;
+footer img {
+	width: 82px;
 	height: 24px;
 }
 
-footer p{
+footer p {
 	color: #707070;
 	font-size: 16px;
 	text-align: center;
 }
 
-
-
-
-
 @media only screen and (max-width: 576px) {
+	#logo-cuppon {
+		margin-left: 20px;
+	}
 
-#logo-cuppon{
-	margin-left: 20px;
+	.btn-navbar {
+		margin-right: 22px;
+	}
+
+	.card {
+		margin-left: 20px;
+		margin-right: 22px;
+	}
+
+	.card,
+	footer {
+		margin: 1%;
+	}
+
+	.navbar {
+		width: 100vw;
+		background-color: #28a745;
+	}
+
+	.navbar-nav {
+		margin-right: 2%;
+		position: static;
+	}
 }
-
-
-
-
-.btn-navbar{
-	margin-right: 22px;
-
-}
-
-
-
-.card{
-margin-left: 20px;
-margin-right: 22px;
-}
-
-.card, footer{
-	margin:1%;
-}
-
-
-.navbar {
-	width: 100vw;
-	background-color:#28A745;
-}
-
-.navbar-nav {
-	margin-right: 2%;
-	position: static;
-} 
-
-} 
