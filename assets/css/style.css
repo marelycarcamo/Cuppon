@@ -8,7 +8,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	min-width: 278px;
+	min-width: 320px;
 }
 
 /* roboto tamaño mediano */
@@ -128,12 +128,11 @@ input {
 
 #form-titulo {
 	font-size: 21px;
-	color: #ffffff;
 }
 
 input .form-boton {
-	background-color: #ffffff;
-	border: 1px solid #dddddd;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 }
 
@@ -169,7 +168,6 @@ footer {
 	justify-self: center;
 	width: 100vw;
 	height: 104px;
-	background-color: #ffffff;
 }
 
 footer img {
@@ -183,7 +181,7 @@ footer p {
 	text-align: center;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
 	#logo-cuppon {
 		margin-left: 20px;
 	}
