@@ -11,6 +11,16 @@ body {
 	min-width: 320px;
 }
 
+.bg-verde{
+	background-color: #28a745;
+}
+
+.text-verde{
+	color:#28a745;
+}
+
+
+
 /* roboto tamaño mediano */
 .special-price,
 #form-titulo,
@@ -26,7 +36,7 @@ button {
 /* NAVBAR */
 
 .navbar {
-	background-color: #28a745;
+	/* background-color: #28a745; */
 	width: 100vw;
 	overflow: hidden;
 }
@@ -105,20 +115,16 @@ button {
 
 /* FORM */
 
-#container-formulario {
+/* #container-formulario {
 	display: flex;
 	justify-content: center;
-}
+} */
 
 form {
-	background-color: #28a745;
+	/* background-color: #28a745; */
 	height: 241px;
 	width: 320px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-}
+	}
 
 input {
 	padding: 10px;
@@ -181,7 +187,7 @@ footer p {
 	text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
 	#logo-cuppon {
 		margin-left: 20px;
 	}
@@ -202,7 +208,7 @@ footer p {
 
 	.navbar {
 		width: 100vw;
-		background-color: #28a745;
+		/* background-color: #28a745; */
 	}
 
 	.navbar-nav {
