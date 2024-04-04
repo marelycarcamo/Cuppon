@@ -8,8 +8,18 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	min-width: 278px;
+	min-width: 320px;
 }
+
+.bg-verde{
+	background-color: #28a745;
+}
+
+.text-verde{
+	color:#28a745;
+}
+
+
 
 /* roboto tamaño mediano */
 .special-price,
@@ -26,7 +36,7 @@ button {
 /* NAVBAR */
 
 .navbar {
-	background-color: #28a745;
+	/* background-color: #28a745; */
 	width: 100vw;
 	overflow: hidden;
 }
@@ -105,20 +115,16 @@ button {
 
 /* FORM */
 
-#container-formulario {
+/* #container-formulario {
 	display: flex;
 	justify-content: center;
-}
+} */
 
 form {
-	background-color: #28a745;
+	/* background-color: #28a745; */
 	height: 241px;
 	width: 320px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-}
+	}
 
 input {
 	padding: 10px;
@@ -128,12 +134,11 @@ input {
 
 #form-titulo {
 	font-size: 21px;
-	color: #ffffff;
 }
 
 input .form-boton {
-	background-color: #ffffff;
-	border: 1px solid #dddddd;
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 }
 
@@ -169,7 +174,6 @@ footer {
 	justify-self: center;
 	width: 100vw;
 	height: 104px;
-	background-color: #ffffff;
 }
 
 footer img {
@@ -204,7 +208,7 @@ footer p {
 
 	.navbar {
 		width: 100vw;
-		background-color: #28a745;
+		/* background-color: #28a745; */
 	}
 
 	.navbar-nav {
