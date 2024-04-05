@@ -1,3 +1,10 @@
+function ordenarProductos() {
+	var opcionSeleccionada = $('#filtro-productos').val();
+	// Lógica para ordenar las tarjetas de productos
+	
+  }
+
+
 function crearCard(data) {
 	return `
         <div class="card shadow p-0">
@@ -12,8 +19,8 @@ function crearCard(data) {
         </div>`;
 }
 
-$(document).ready(function () {
-	lst = [
+function leerDatos(){
+	var lst = [
 		{	
 			title: "Plumón Coral Fleece estampado en modelo y tamaño a elección",
 			subtitle: "Plumones Manolino",
@@ -58,7 +65,11 @@ $(document).ready(function () {
 			specialPrice: "44.100",
 		},
 	];
+	return lst;
+}
 
+$(document).ready(function () {
+	var lst = leerDatos();
 	// Crear las tarjetas para cada objeto en lst
 	lst.forEach(function (item,index) {
 		// Agregar el nombre de la imagen al objeto

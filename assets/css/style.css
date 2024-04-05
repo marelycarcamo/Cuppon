@@ -58,11 +58,6 @@ button {
 
 /* CARD */
 
-/* row-cols-auto */
-#productos {
-	padding-block: 5%;
-}
-
 .cards {
 	display: flex;
 	flex-direction: row;
@@ -76,7 +71,14 @@ button {
 	width: 278px;
 	margin-inline: 5%;
 	margin-bottom: 5%;
+	transition: transform 0.8s ease-in-out;
 }
+
+.card:hover {
+	transform: scale(1.05);
+
+}
+
 
 .card img {
 	height: 180px;
